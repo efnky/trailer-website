@@ -1,0 +1,3 @@
+# Place showtime / pre-show videos (.mp4 / .webm / .mov) in this folder.
+# Files containing "path" (Pathé intro) or "imax" (IMAX countdown) are auto-detected.
+# This placeholder keeps the folder in git; the videos themselves are gitignored.
