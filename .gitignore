@@ -1,11 +1,3 @@
-# Media files
-*.mp4
-*.webm
-*.mov
-*.mkv
-*.avi
-*.m4v
-
 # macOS
 .DS_Store
 
