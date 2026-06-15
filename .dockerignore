@@ -1,0 +1,6 @@
+trailers/
+showtime-trailers/
+download.sh
+.git/
+.gitignore
+*.md

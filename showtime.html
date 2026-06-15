@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showtime - Movie Night 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="showtime-body">
+
+  <!-- ===== Phase 1: Selection Screen ===== -->
+  <div id="selection-screen" class="selection-screen">
+    <div class="selection-header">
+      <a href="index.html" class="back-link">← Back</a>
+      <h1>Set Up Your Showtime</h1>
+      <p class="selection-subtitle">Pick <strong>4 trailers</strong>, then choose your <strong>IMAX trailer</strong></p>
+    </div>
+
+    <div class="selection-section">
+      <h2>Trailers <span id="trailer-count" class="badge">0 / 4</span></h2>
+      <div id="trailer-grid" class="trailer-grid"></div>
+    </div>
+
+    <button id="btn-start-showtime" class="btn-showtime" disabled>Start Showtime</button>
+  </div>
+
+  <!-- ===== Phase 2: Playback ===== -->
+  <div id="playback-screen" class="playback-screen hidden">
+    <video id="showtime-video" autoplay></video>
+    <div class="playback-overlay">
+      <div id="now-playing" class="now-playing">
+        <span class="np-label">Now Playing</span>
+        <span id="np-title" class="np-title"></span>
+        <span id="np-progress" class="np-progress"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Blackout: pause between trailers ===== -->
+  <div id="blackout" class="blackout hidden"></div>
+
+  <!-- ===== Phase 3: Now Showing ===== -->
+  <div id="now-showing-screen" class="now-showing-screen hidden">
+    <div class="ns-content">
+      <div class="ns-badge">NOW SHOWING</div>
+      <h1 class="ns-title">Project Hail Mary</h1>
+      <p class="ns-meta">Based on the novel by Andy Weir</p>
+      <p class="ns-instruction">Switch to the Apple TV app to start the movie</p>
+      <button id="btn-restart" class="btn-showtime btn-restart">↺ Start Over</button>
+    </div>
+  </div>
+
+  <script src="showtime.js"></script>
+</body>
+</html>

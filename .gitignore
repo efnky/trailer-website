@@ -1,0 +1,20 @@
+# Video folders (provide your own at runtime — do not commit large media)
+trailers/
+showtime-trailers/
+
+# Media files
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.avi
+*.m4v
+
+# macOS
+.DS_Store
+
+# Editor / OS cruft
+*.swp
+*~
+.idea/
+.vscode/

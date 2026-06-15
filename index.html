@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Night - Global'INSA 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted></video>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="top-bar">
+    <h1>Movie Night - Global'INSA 🎬</h1>
+    <div class="trailer-select">
+      <label for="trailer-picker">Now Playing:</label>
+      <select id="trailer-picker">
+        <option value="">— choose a trailer —</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="controls-hint" id="controls-hint">
+    <span>Click anywhere to unmute</span>
+  </div>
+
+  <div class="countdown" id="countdown">
+    <div class="countdown-display">
+      <span id="cd-hours">00</span><span class="sep">:</span><span id="cd-minutes">00</span><span class="sep">:</span><span id="cd-seconds">00</span>
+    </div>
+    <div class="countdown-controls">
+      <button id="cd-up" title="Add time">+</button>
+      <button id="cd-down" title="Remove time">−</button>
+      <button id="cd-start" title="Start / Pause">▶</button>
+      <button id="cd-reset" title="Reset">↺</button>
+    </div>
+  </div>
+
+  <p id="empty-state" class="empty-state hidden">
+    No trailers found. Add <code>.mp4</code>, <code>.webm</code>, or <code>.mov</code> files to the <code>trailers/</code> folder.
+  </p>
+
+  <a href="showtime.html" class="showtime-link">🎬 Showtime</a>
+
+  <script src="app.js"></script>
+</body>
+</html>
