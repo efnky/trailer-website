@@ -1,7 +1,3 @@
-# Video folders (provide your own at runtime — do not commit large media)
-trailers/
-showtime-trailers/
-
 # Media files
 *.mp4
 *.webm
